@@ -107,4 +107,4 @@ with gr.Blocks() as demo:
     )
     clear_button.click(clear_history, outputs=chat_history_box)
 
-demo.launch(server_name="127.0.0.1", server_port=7860, share=True)
+demo.launch(share=True)
