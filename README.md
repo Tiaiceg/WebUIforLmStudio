@@ -29,7 +29,7 @@ You can run the WebUI locally and use domain mapping methods or the sharing serv
 
 1. **克隆仓库 / Clone the Repository**:
     ```bash
-    git clone https://github.com/<your-username>/WebUIforLmStudio.git
+    git clone https://github.com/Tiaiceg/WebUIforLmStudio.git
     cd WebUIforLmStudio
     ```
 
@@ -42,7 +42,7 @@ You can run the WebUI locally and use domain mapping methods or the sharing serv
 
 3. **启动服务器 / Start the Server**:
     ```bash
-    python app.py
+    python main.py
     ```
 
 ---
