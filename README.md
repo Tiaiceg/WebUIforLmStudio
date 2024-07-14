@@ -142,9 +142,9 @@ This project is licensed under the MIT License.
 
 ### 联系方式 / Contact
 
-如有任何问题或需要支持，请联系 [your-email@example.com]。
+如有任何问题或需要支持，请联系 [tiaic@outlook.com]。
 
-For questions or support, please contact [your-email@example.com].
+For questions or support, please contact [tiaic@outlook.com].
 
 ---
 
