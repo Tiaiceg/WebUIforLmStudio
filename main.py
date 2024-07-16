@@ -68,27 +68,27 @@ def clear_history():
 
 # UI layout
 with gr.Blocks() as demo:
-    gr.Markdown("# Chatbot UI")
+    gr.Markdown("# 标题")
     
-    user_name = gr.Textbox(label="User Name", placeholder="Enter your name here...")
-    server_name = gr.Textbox(label="Server Name", placeholder="Enter server name here...")
+    user_name = gr.Textbox(label="用户代称(只是用于区分对话气泡,不会影响实际对话内容,请勿空白)", placeholder="此处输入名字")
+    server_name = gr.Textbox(label="模型代称(只是用于区分对话气泡,不会影响实际对话内容,请勿空白)", placeholder="此处输入名字")
     
-    system_message = gr.Textbox(label="System Message", placeholder="Enter system message here...")
+    system_message = gr.Textbox(label="身份信息和对话要求(System_message,请勿空白)", placeholder="此处输入信息")
     
     chat_history_box = gr.Chatbot(label="Chat History")
 
-    user_message = gr.Textbox(label="Your Message", placeholder="Enter your message here...")
-    send_button = gr.Button("Send")
+    user_message = gr.Textbox(label="输入框", placeholder="此处编辑要发送的消息")
+    send_button = gr.Button("发送")
     
     with gr.Row():
-        recall_button = gr.Button("Recall")
-        resend_button = gr.Button("Resend")
-        clear_button = gr.Button("Clear")
+        recall_button = gr.Button("撤回")
+        resend_button = gr.Button("重发")
+        clear_button = gr.Button("清空记录")
     
-    with gr.Accordion("Settings"):
-        temperature = gr.Slider(0, 1, value=0.7, label="Temperature")
-        frequency_penalty = gr.Slider(0, 2, value=0, label="Frequency Penalty")
-        presence_penalty = gr.Slider(0, 2, value=0, label="Presence Penalty")
+    with gr.Accordion("高级设置"):
+        temperature = gr.Slider(0, 1, value=0.8, label="temperature")
+        frequency_penalty = gr.Slider(0, 2, value=0, label="frequency_penalty")
+        presence_penalty = gr.Slider(0, 2, value=0, label="presence_penalty")
 
     send_button.click(
         lambda sm, un, sn, um, t, fp, pp: send_message(sm, un, sn, um, t, fp, pp),
