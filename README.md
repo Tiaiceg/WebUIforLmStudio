@@ -130,6 +130,8 @@ pip install gradio requests
 
 Contributions are welcome! Feel free to submit an issue or pull request with your suggestions for improvements.
 
+特别感谢https://github.com/aihehei在本项目调试过程中的贡献.
+
 ---
 
 ### 许可证 / License
