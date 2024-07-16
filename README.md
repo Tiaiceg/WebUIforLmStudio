@@ -39,12 +39,14 @@ You can run the WebUI locally and use domain mapping methods or the sharing serv
     ```bash
     pip install -r requirements.txt
     ```
-
-3. **启动服务器 / Start the Server**:
+    Windows用户可以执行'环境安装.bat'来直接安装
+   
+4. **启动服务器 / Start the Server**:
     ```bash
     python main.py
     ```
-
+    Windows用户可以执行'启动.bat'来直接启动
+   
 ---
 
 ### 使用 / Usage
